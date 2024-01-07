@@ -12,20 +12,20 @@
 <form class="row g-3">
   <div class="col-md-4">
     <label for="validationServer01" class="form-label">First name</label>
-    <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+    <input type="text" class="form-control is-valid" id="validationServer01" value=${obj.myName} required>
     <div class="valid-feedback">
       Looks good!
     </div>
   </div>
   <div class="col-md-4">
     <label for="validationServer02" class="form-label">Last name</label>
-    <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+    <input type="text" class="form-control is-valid" id="validationServer02" value=${obj.fName} required>
     <div class="valid-feedback">
-      Looks good!
+    
     </div>
   </div>
   <div class="col-md-4">
-    <label for="validationServerUsername" class="form-label">Username</label>
+    <label for="validationServerUsername" class="form-label">${obj.myName} , ${obj.fName}</label>
     <div class="input-group has-validation">
       <span class="input-group-text" id="inputGroupPrepend3">@</span>
       <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
@@ -52,7 +52,7 @@
     </div>
   </div>
   <div class="col-md-3">
-    <label for="validationServer05" class="form-label">Zip</label>
+    <label for="validationServer05" class="form-label">ss</label>
     <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
     <div id="validationServer05Feedback" class="invalid-feedback">
       Please provide a valid zip.
